@@ -111,7 +111,7 @@
                         this.fetchWorkorders();
                     }
                 });
-                window.facilioApp.on("form.category.changed", (category) => { // resource
+                window.facilioApp.on("form.asset_category_workorder.changed", (category) => { // resource
                     console.log("category", category.value.id)
                     if (category.value && category.value.id) {
                         this.category = category.value.id;
